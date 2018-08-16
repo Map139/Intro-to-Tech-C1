@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<h1 id= "shades"></h1> 
+
+	<script>
+		var color = ["Blue", "Green", "Red", "Orange", "Violte", "Indigo", "Yellow"];
+		var O = ["th", "st", "nd", "rd"];
+
+		for(var i = 0; i < color.length; i++){
+			if(i == 0){
+			document.getElementById("shades").innerHTML += ( "1" + O[1] + " choice is " + color[i]);
+			}else if(i == 1){
+			document.getElementById("shades").innerHTML += ( "<br> 2" + O[2] + " choice is " + color[i]);
+
+			}else if(i == 2){
+				document.getElementById("shades").innerHTML += ( " <br> 3" + O[3] + " choice is " + color[i]);
+			}else if(i == 3){
+				document.getElementById("shades").innerHTML += ( "<br> 4" + O[0] + " choice is " + color[i]);
+			}else if(i == 4){
+				document.getElementById("shades").innerHTML += ( "<br> 5" + O[0] + " choice is " + color[i]);
+			}else if(i == 5){
+				document.getElementById("shades").innerHTML += ( "<br> 6" + O[0] + " choice is " + color[i]);
+			}else if(i == 6){
+				document.getElementById("shades").innerHTML += ( "<br> 7" + O[0] + " choice is " + color[i]);
+				}
+			}
+
+
+
+
+
+
+		
+
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id= "Fizz"></h1>
+	<script>
+		var count = 1;
+		while(count <= 100){
+
+		if(count % 3 == 0 && count % 5 == 0){
+			document.getElementById("Fizz").innerHTML += " FizzBuzz<br>"
+		}
+		else if( count % 3 == 0){
+			document.getElementById("Fizz").innerHTML += "Fizz<br>"
+		
+		}
+		else if(count % 5 == 0){
+			document.getElementById("Fizz").innerHTML += "Buzz<br>"
+		}
+		else{ 
+			document.getElementById("Fizz").innerHTML +=  count + "<br>"
+		}
+
+			count++ 
+		}
+		
+
+	</script>
+
+	</body>
+</html>
