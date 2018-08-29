@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="limit" type="number" max="100"  onchange="tuneData()" placeholder="Enter Ammount">
+		<div id="display"></div>
+		
+		<script>
+
+			function tuneData(){
+				var display = document.getElementById('display');
+				var limit = document.getElementById('limit').value;
+				fetch('https://jsonplaceholder.typicode.com/photos')
+				.then(function(res){return res.json()})
+				.then(function(data){console.log(data) 
+				for(var i = 0; i < limit; i++){
+					display.innerHTML += `<h1>${data[i].title}</h1>`;
+					display.innerHTML +=  `<img src="${data[i].thumbnailUrl}">`;
+					display.innerHTML += `<hr>`;
+
+				}
+
+			})
+		} tuneData()
+
+		
+
+			
+
+
+
+		</script>
+
+	</body>
+</html>
